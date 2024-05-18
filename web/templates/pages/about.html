@@ -1,0 +1,60 @@
+{{define "about"}}
+<html>
+{{ template "Header" }}
+<body>
+{{ template "NavigationHeader" }}
+<!-- Event Details Section -->
+<section class="py-12 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Event Details</h2>
+            <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Annual Company Gathering
+            </p>
+            <p class="mt-4 text-lg text-gray-600">
+                Join us for an evening of fun, networking, and celebration.
+            </p>
+        </div>
+
+        <div class="mt-10 space-y-6">
+            <!-- Date and Time -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-900">Date and Time</h3>
+                <p class="mt-2 text-gray-600">Saturday, June 24, 2024</p>
+                <p class="text-gray-600">6:00 PM - 10:00 PM</p>
+            </div>
+
+            <!-- Location -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-900">Location</h3>
+                <p class="mt-2 text-gray-600">Grand Ballroom, Hilton Hotel</p>
+                <p class="text-gray-600">1234 Elm Street, Springfield, IL</p>
+            </div>
+
+            <!-- Invitation Message -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-900">Invitation Message</h3>
+                <p class="mt-2 text-gray-600">
+                    We are excited to invite you to our Annual Company Gathering. This is a great opportunity to connect with colleagues, celebrate our achievements, and enjoy a memorable evening together. We look forward to seeing you there!
+                </p>
+            </div>
+
+            <!-- Breakdown of Events -->
+            <div class="bg-gray-50 p-6 rounded-lg shadow-lg">
+                <h3 class="text-xl font-semibold text-gray-900">Breakdown of Events</h3>
+                <ul class="mt-2 text-gray-600 list-disc list-inside space-y-2">
+                    <li>6:00 PM - Welcome Reception</li>
+                    <li>6:30 PM - Opening Remarks</li>
+                    <li>7:00 PM - Dinner Service</li>
+                    <li>8:00 PM - Award Ceremony</li>
+                    <li>9:00 PM - Networking and Social Hour</li>
+                    <li>10:00 PM - Event Conclusion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{ template "Footer" }}
+</body>
+</html>
+{{ end }}

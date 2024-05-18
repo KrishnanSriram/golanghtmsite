@@ -1,0 +1,37 @@
+{{define "services"}}
+<html>
+{{ template "Header" }}
+<body>
+{{ template "NavigationHeader" }}
+<!-- Image Grid Section -->
+<section class="py-12 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+            <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Gallery</h2>
+            <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                Our Image Collection
+            </p>
+        </div>
+
+        <div class="mt-10">
+            <div class="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+                <!-- Image Template (Repeat this block for each image) -->
+                <!-- Use a loop in your backend to generate these divs for 100 images -->
+                <div class="w-full h-48 bg-gray-200 flex items-center justify-center rounded-lg shadow-lg overflow-hidden">
+                    <img class="object-cover object-center w-full h-full" src="https://via.placeholder.com/150" alt="Image 1">
+                </div>
+                <!-- Repeat this block for 100 images -->
+                <!-- Example for 100 images -->
+                <div class="w-full h-48 bg-gray-200 flex items-center justify-center rounded-lg shadow-lg overflow-hidden">
+                    <img class="object-cover object-center w-full h-full" src="https://via.placeholder.com/150" alt="Image 2">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+
+    </div>
+</section>
+{{ template "Footer" }}
+</body>
+</html>
+{{ end }}

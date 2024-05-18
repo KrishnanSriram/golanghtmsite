@@ -1,0 +1,96 @@
+{{define "index"}}
+<html>
+{{ template "Header" }}
+<body>
+    {{ template "NavigationHeader" }}
+    <!--  HERO section  -->
+    <section class="bg-gray-100 py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4">{{ .title }}</h1>
+            <p class="text-gray-600 mb-8">{{ .content }}</p>
+            <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600">Learn More</a>
+        </div>
+    </section>
+    <!--    Stats Section -->
+    <div class="bg-white py-24 sm:py-32">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base leading-7 text-gray-600">Total number of events</dt>
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">125 events</dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base leading-7 text-gray-600">Number of contributors</dt>
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">300 people</dd>
+                </div>
+                <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base leading-7 text-gray-600">Sesonal contributions</dt>
+                    <dd class="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">$1100</dd>
+                </div>
+            </dl>
+        </div>
+    </div>
+    <!--  Testimonials  -->
+    <!-- Testimonial Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Testimonials</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    What our customers are saying
+                </p>
+            </div>
+
+            <div class="mt-10">
+                <div class="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <p class="mt-2 text-gray-600">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                        </p>
+                        <div class="mt-4 flex items-center">
+                            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/150" alt="Person 1">
+                            <div class="ml-4">
+                                <p class="text-gray-900 font-semibold">John Doe</p>
+                                <p class="text-gray-600">CEO, Company Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <p class="mt-2 text-gray-600">
+                            "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        </p>
+                        <div class="mt-4 flex items-center">
+                            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/150" alt="Person 2">
+                            <div class="ml-4">
+                                <p class="text-gray-900 font-semibold">Jane Smith</p>
+                                <p class="text-gray-600">CTO, Another Company</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <p class="mt-2 text-gray-600">
+                            "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        </p>
+                        <div class="mt-4 flex items-center">
+                            <img class="w-10 h-10 rounded-full" src="https://via.placeholder.com/150" alt="Person 3">
+                            <div class="ml-4">
+                                <p class="text-gray-900 font-semibold">Michael Johnson</p>
+                                <p class="text-gray-600">CFO, Some Company</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more testimonials as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+    {{ template "Footer" }}
+</body>
+</html>
+{{ end }}
