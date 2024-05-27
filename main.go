@@ -45,5 +45,5 @@ func main() {
 			"content": "This is the CONTACTS page for application. check HOME for more information",
 		})
 	})
-	router.Run(":8000")
+	router.Run(":8080")
 }
